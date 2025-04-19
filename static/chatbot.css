@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#chatbot-icon {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+#chatbot-icon:hover {
+    background: darkblue;
+}
+
+#chatbox {
+    width: 320px;
+    height: 420px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth; /* 🔹 Enables smooth scrolling */
+}
+
+#chat-header {
+    background: blue;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* 🔹 FIXED SCROLLING ISSUE: Chat messages scroll separately */
+#chat-messages {
+    flex-grow: 1; /* Expands to fill available space */
+    overflow-y: auto; /* Enables scrolling */
+    padding: 10px;
+    background: #f9f9f9;
+    max-height: 300px; /* Prevents excessive growth */
+}
+
+/* 🔹 INPUT CONTAINER STAYS FIXED AT THE BOTTOM */
+#chat-input-container {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    bottom: 0;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+#send-button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#send-button:hover {
+    background: darkblue;
+}
+
+.option-button {
+    margin: 5px;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.option-button:hover {
+    background-color: #0056b3;
+}
+
+

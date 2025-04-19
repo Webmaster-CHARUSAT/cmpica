@@ -3,6 +3,7 @@
 
 <head>
 	<title>CMPICA - Smt. Chandaben Mohanbhai Patel Institute of Computer Applications</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<meta http-equiv="Content-Type" content=" text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +21,9 @@
 	<meta property="og:description" content="CMPICA - best computer application college to study in Gujarat" />
 	<meta name="author" content="CHARUSAT Web Team-MCA Team">
 
+	<link rel="stylesheet" href="static/chatbot.css">
 	
+
 
 	<!-- placement chart over -->
 
@@ -2138,7 +2141,7 @@
 				</div>
 				<div class="col-sm-6 col-md-3 team-single-info-02 item ">
 					<div class="teacher-body">
-						<img src="images/faculty_photo/RaviNimavat.png" alt="" 
+						<img src="images/faculty_photo/Updated_RaviNimavat.png" alt="" 
 							class="img-responsive">
 						<div class="teachars-info">
 							<h3>Ravi Nimavat</h3>
@@ -2955,49 +2958,49 @@
     JavaScript Files
     ============================= -->
 	<!-- jQuery -->
-	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="js/vendor/jquery-1.12.4.min.js" defer></script>
 	<!-- Bootstrap JS -->
-	<script src="js/assets/bootstrap.min.js"></script>
+	<script src="js/assets/bootstrap.min.js" defer></script>
 	<!-- owl carousel -->
-	<script src="js/assets/owl.carousel.min.js"></script>
+	<script src="js/assets/owl.carousel.min.js" defer></script>
 	<!-- Revolution Slider -->
-	<script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
-	<script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script>
+	<script src="js/assets/revolution/jquery.themepunch.revolution.min.js" defer></script>
+	<script src="js/assets/revolution/jquery.themepunch.tools.min.js" defer></script>
 	<!-- Popup -->
-	<script src="js/assets/jquery.magnific-popup.min.js"></script>
+	<script src="js/assets/jquery.magnific-popup.min.js" defer></script>
 	<!-- Sticky JS -->
-	<script src="js/assets/jquery.sticky.js"></script>
+	<script src="js/assets/jquery.sticky.js" defer></script>
 	<!-- Counter Up -->
-	<script src="js/assets/jquery.counterup.min.js"></script>
-	<script src="js/assets/waypoints.min.js"></script>
+	<script src="js/assets/jquery.counterup.min.js" defer></script>
+	<script src="js/assets/waypoints.min.js" defer></script>
 	<!-- Slick Slider-->
-	<script src="js/assets/slick.min.js"></script>
+	<script src="js/assets/slick.min.js" defer></script>
 	<!-- Main Menu -->
-	<script src="js/assets/jquery.meanmenu.min.js"></script>
+	<script src="js/assets/jquery.meanmenu.min.js" defer></script>
 
 	<!-- Revolution Extensions -->
-	<script type="text/javascript" src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
-	<script type="text/javascript" src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
-	<script type="text/javascript" src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
-	<script type="text/javascript"
+	<script type="text/javascript" defer src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" defer src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript" defer src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" defer
 		src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
-	<script type="text/javascript"
+	<script type="text/javascript" defer src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" defer
 		src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
-	<script type="text/javascript"
+	<script type="text/javascript" defer src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" defer
 		src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-	<script type="text/javascript" src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
-	<script type="text/javascript" src="js/assets/revolution/revolution.js"></script>
+	<script type="text/javascript" defer src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" defer src="js/assets/revolution/revolution.js"></script>
 	<!-- Custom JS -->
-	<script src="js/custom.js"></script>
-	<script>
+	<script defer src="js/custom.js"></script>
+	<script defer>
 		function do_show() {
 			document.getElementById("id_home_more").style.display = "block";
 			return false;
 		}
 	</script>
-	<script type="text/javascript">var s = document.createElement("script");
+	<script defer type="text/javascript">var s = document.createElement("script");
 		s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js";
 		document.body.appendChild(s);
 	</script>
@@ -3008,6 +3011,25 @@
 			});
 		})(jQuery);
 	</script>
+	<!-- Chatbot Icon and Box -->
+
+<script src="/static/chatbot.js"></script>
+
+	<div id="chatbot-container">
+		<div id="chatbot-icon">💬</div>
+		<div id="chatbox">
+			<div id="chat-header">Chat with us!</div>
+			<div id="chat-messages"></div>
+			<div id="chat-input-container">
+			<div class="chat-options">
+	
+				<input type="text" id="user-input" placeholder="Type a message...">
+				<button type='submit' id="send-button">Send</button>
+			</div>
+		</div>
+	</div>
+<!-- End Chatbot Icon and Box -->
+
 </body>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
