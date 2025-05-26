@@ -137,3 +137,6 @@ body {
     border-top: 1px solid #eee;
     background: #f9f9f9;
 }
+.hidden {
+    display: none;
+}

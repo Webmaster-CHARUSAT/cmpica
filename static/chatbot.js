@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleChat() {
     let chatbox = document.getElementById("chatbox");
-    chatbox.style.display = (chatbox.style.display === "none" || chatbox.style.display === "") ? "flex" : "none";
+    chatbox.classList.toggle("hidden");
 }
 
 function sendMessage(messageText = null) {
@@ -31,7 +31,7 @@ function sendMessage(messageText = null) {
     userInputField.blur(); 
 
     // Send to Flask backend
-    fetch("/chat", {
+    fetch("https://charusat-chatbot.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userInput })
