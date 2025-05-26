@@ -3015,19 +3015,18 @@
 
 <script src="static/chatbot.js"></script>
 
-	<div id="chatbot-container">
-		<div id="chatbot-icon">💬</div>
-		<div id="chatbox">
-			<div id="chat-header">Chat with us!</div>
-			<div id="chat-messages"></div>
-			<div id="chat-input-container">
-			<div class="chat-options">
-	
-				<input type="text" id="user-input" placeholder="Type a message...">
-				<button type='submit' id="send-button">Send</button>
-			</div>
+<div id="chatbot-container">
+	<div id="chatbot-icon" onclick="toggleChat()">⚙</div>
+	<div id="chatbox" class="hidden">
+		<div id="chat-header">CMPICA BOT!</div>
+		<div id="chat-messages"></div>
+		<div id="chat-input-container">
+			<input type="text" id="user-input" placeholder="Search for mca fees, Admission Process...">
+			<button id="send-button">Send</button>
 		</div>
+	   <div id="bot-credit">Developed by RG & KG</div>
 	</div>
+</div>
 <!-- End Chatbot Icon and Box -->
 
 </body>
