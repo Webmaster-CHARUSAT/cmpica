@@ -37,9 +37,9 @@
 	}
 	p {
 	    font-family: "Open Sans", sans-serif;
-	    font-size: 12px;
+	    font-size: 14px;
 	    color: #727272;
-	   /* line-height: 24px;*/
+	    line-height: 24px;
 	}
 	h1,
 	h2,
@@ -75,7 +75,7 @@
 	}
 	.section-header:before,
 	.section-header-l:before {
-	    /* border-bottom: 1px solid #b2b2b2; */
+	    border-bottom: 1px solid #b2b2b2;
 	    bottom: 15px;
 	    content: "";
 	    height: 2px;
@@ -675,8 +675,8 @@
 	/*=======[ Index Courses Area Style ]========*/
 	
 	.Courses-area {
-	    /* background: #f9f9f9;*/
-	    padding-top: 30px 0;
+	    background: #f9f9f9;
+	    padding: 100px 0;
 	}
 	.Courses-area .courses-r-margin-bottom {
 	    margin-bottom: 30px;
@@ -828,9 +828,7 @@
 	
 	.video-main-area {
 	    background: transparent url("../../images/common/video_bg_c.webp") no-repeat center center/cover;
-	    /* padding: 255px 0; */
-		padding: 0px 0;
-
+	    padding: 255px 0;
 	}
 	.video-main-area .video-play-btn {
 	    margin-bottom: 40px;
@@ -1438,7 +1436,7 @@
 	    padding-bottom: 15px;
 	}
 	.home_version_02 .Welcome-area {
-	    padding: 25px 0;
+	    padding: 100px 0;
 	}
 	.home_version_02 .Welcome-area .wel-text-box {
 	    text-align: center;
@@ -1941,11 +1939,11 @@
 	}
 	.home_version_02 .teachers-area .teacher-body img {
 	    width: 100%;
-	   /* min-height: 290px; */
+	    min-height: 290px;
 	}
 	.home_version_02 .teachers-area .teacher-body .teachars-info {
 	    text-align: center;
-	    /*padding: 25px 20px 12px;*/
+	    padding: 25px 20px 12px;
 	}
 	.home_version_02 .teachers-area .teacher-body .teachars-info h3 {
 	    padding: 0;
@@ -2622,7 +2620,7 @@
 	    transition: all 0.3s ease-in-out;
 	}
 	.home_version_03 .achievment-area {
-	    background: url("../images/common/scalars_c.webp") no-repeat center center/cover;
+	    background: url("../images/cspit_images/scalars.png") no-repeat center center/cover;
 	    background-position: center;
 	    position: relative;
 	    z-index: 1;
@@ -8411,50 +8409,3 @@ span.b-active {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* Ravi Nimavat CSS code */
-
-/* placement section code */
-  h2 {
-	color: #004080;
-  }
-  .section {
-	background: #fff;
-	border-radius: 8px;
-	margin-bottom: 20px;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-	overflow: hidden;
-  }
-
-  .header {
-	background-color: #004080;
-	color: white;
-	padding: 12px 20px;
-	cursor: pointer;
-	font-size: 18px;
-  }
-  .content {
-	display: none;
-	padding: 20px;
-  }
-  table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-top: 10px;
-  }
-  th, td {
-	padding: 12px;
-	text-align: left;
-	border-bottom: 1px solid #ddd;
-  }
-  th {
-	background-color: #e6f0ff;
-  }
-  tr:hover {
-	background-color: #f1f1f1;
-  }   
-/* placement code end */
-
-
-
-
-
