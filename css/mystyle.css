@@ -1,0 +1,234 @@
+
+  .accordion-header {
+    background: linear-gradient(90deg, #003366, #0059b3);
+    color: #ffffff;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .accordion-header:hover {
+    background: linear-gradient(90deg, #004080, #0066cc);
+    transform: translateY(-2px);
+  }
+
+  .accordion-header i {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-content {
+    display: none;
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.10);
+    border-left: 6px solid #003366;
+  }
+
+  .accordion-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .accordion-content th {
+    background: #003366;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px;
+    text-align: left;
+  }
+
+  .accordion-content td {
+    border: 1px solid #ddd;
+    padding: 12px 14px;
+    text-align: left;
+  }
+
+  .accordion-content tr:nth-child(even) {
+    background: #f5f8ff;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .accordion-header {
+      font-size: 18px;
+      padding: 14px 18px;
+    }
+  }
+
+/* slider CSS code */
+.cmpica-split-slider {
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  background: #ffffff;
+}
+
+.cmpica-slide {
+  display: flex;
+  width: 100%;
+  height: 360px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity .6s ease;
+}
+
+.cmpica-slide.active { opacity: 1; position: relative; }
+
+.cmpica-slide-img {
+  width: 55%;
+  background: #fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.cmpica-slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* never crop */
+}
+
+.cmpica-slide-text {
+  width: 45%;
+  padding: 40px;
+  background: linear-gradient(135deg,#003366,#0059b3);
+  color:white;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+.cmpica-slide-text h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+.cmpica-slide-text p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* Arrows */
+.cmpica-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px; height:42px;
+  background: #fff;
+  color: #003366;
+  border-radius: 50%;
+  border:none;
+  cursor:pointer;
+  font-size: 22px;
+}
+.cmpica-arrow.prev { left:10px; }
+.cmpica-arrow.next { right:10px; }
+
+/* Dots */
+.cmpica-dots {
+  position: absolute;
+  bottom:14px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:8px;
+}
+.cmpica-dot {
+  width:11px;height:11px;border-radius:50%;
+  background:#ccc; cursor:pointer;
+}
+.cmpica-dot.active { background:#00a3ff; }
+
+/* Responsive */
+@media(max-width:900px){
+  .cmpica-slide { flex-direction:column; height:auto; }
+  .cmpica-slide-img,
+  .cmpica-slide-text { width:100%; height:auto; }
+  .cmpica-slide-text { padding:24px; text-align:center; }
+}
+
+.cmpica-slide-text {
+  width: 45%;
+  padding: 40px;
+  background: linear-gradient(135deg,#003366,#0059b3);
+  color:#ffffff !important;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.cmpica-slide-text h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  font-weight: 800;
+  color:#ffffff !important;
+}
+
+.cmpica-slide-text p {
+  font-size: 17px;
+  line-height: 1.55;
+  color:#ffffff !important;
+}
+
+/* for best practice */
+.best-practices-section {
+  width: 100%;
+  padding: 60px 0;
+  background: #f7f9fc;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+.practice-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.content-box {
+  width: 500px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 18px;
+}
+
+.practice-image {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
